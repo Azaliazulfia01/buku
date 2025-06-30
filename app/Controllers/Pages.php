@@ -6,39 +6,31 @@ class Pages extends BaseController
 {
     public function index()
     {
-        $data = [
-            'title' => 'Home | Unipdu Press',
-        ];
-        echo view('pages/home', $data);
-
+    $data = [
+        'title' => 'Beranda | Halaman Senja',
+    ];
+    echo view('pages/home', $data);
     }
+
     public function about()
     {
-        $data = [
-            'title' => 'Tentang',
-        ];
-        echo view('pages/about', $data);
+    $data = [
+        'title' => 'Tentang Kami | Halaman Senja',
+    ];
+    echo view('pages/about', $data);
     }
-        public function contact()
+
+
+    public function contact()
     {
         $data = [
-            'title' => 'Hubungi Kami',
-            'alamat' => 
-            [
-                [
-                    'tipe' => 'Rumah',
-                    'alamat' => 'Gedangan',
-                    'kota' => 'Jombang',
-                ],
-                [
-                    'tipe' => 'Kampus',
-                    'alamat' => 'Peterongan',
-                    'kota' => 'Jombang',
-                ],
-            ],
+            'title' => 'Kontak Kami | BukuKita',
+            'kontak' => [
+                'email' => 'bukukita.ac.id',
+                'whatsapp' => '+62 87723710329',
+                'instagram' => '@bukita.id'
+            ]
         ];
         echo view('pages/contact', $data);
     }
 }
-
-?>

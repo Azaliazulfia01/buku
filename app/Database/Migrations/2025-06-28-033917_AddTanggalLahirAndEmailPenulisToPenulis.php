@@ -12,7 +12,7 @@ class AddTanggalLahirAndEmailPenulisToPenulis extends Migration
             'tanggal_lahir' => [
                 'type' => 'DATE',
                 'null' => true,
-                'after' => 'name' // letakkan setelah kolom 'name'
+                'after' => 'name'
             ],
             'email_penulis' => [
                 'type'       => 'VARCHAR',
